@@ -1,0 +1,28 @@
+baseURL = 'https://dherman.dev/'
+languageCode = 'en-us'
+title = 'David Herman'
+sectionPagesMenu = 'main'
+
+[module]
+[[module.imports]]
+disable = false
+ignoreConfig = false
+ignoreImports = false
+path = 'github.com/theNewDynamic/gohugo-theme-ananke/v2'
+
+[params.ananke.social.follow]
+new_window_icon = false
+networks = [
+  "bluesky",
+  "github",
+  "linkedin"
+]
+
+[params.ananke.social.bluesky]
+username = "dherman.dev"
+
+[params.ananke.social.github]
+username = "dherman"
+
+[params.ananke.social.linkedin]
+username = "davidandrewherman"
