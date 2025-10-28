@@ -91,8 +91,9 @@ This is _starting_ to look like engineering. But there are still major limitatio
 - Without transitivity, it's hard to see how abstraction scales. Maybe this will be a fundamental source of drag until inference costs drop low enough.
 - When you need classic logic like loops and conditionals, writing it in English is just worse: verbose, distracting, and ambiguous.
 - Although subjectively, my tests were converging on similar outcomes, coming up with objective criteria for evaluating nondeterministic software is still hard.
+- Of course, using LLMs for all computation would be obscenely wasteful.
 
-So is English the programming language of the future? I'm _probably_ still a no, at least in the purest sense.
+So is English the programming language of the future? In the purest sense, I'm still a no.
 
 But the fact that LLMs can be so effective and even remarkably predictable tells me to keep an open mind. I'm excited to think we may be on the verge of exploring new models of not just coding tools but even what code itself could look like.
 
