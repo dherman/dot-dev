@@ -26,3 +26,6 @@ username = "dherman"
 
 [params.ananke.social.linkedin]
 username = "davidandrewherman"
+
+[services.googleAnalytics]
+id = 'G-48X0XWN1JF'
