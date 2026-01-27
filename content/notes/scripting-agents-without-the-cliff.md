@@ -10,7 +10,7 @@ I tried [coding in English](/notes/coding-in-english/). It was fun attempting to
 
 Here's the thing: conversational scripting is actually great for getting started. You chat with Claude Code or Codex, get it to do something useful, and if you want to reuse it, you drop it in a markdown file. So easy.
 
-But the moment you want real control—loops that don't require three paragraphs of prose, branching logic that isn't ambiguous, or composition that actually scales—**you just still want code.**
+But the moment you want real control—loops that don't require three paragraphs of prose, branching logic that isn't ambiguous, or composition that actually scales—**you still just want code.**
 
 The problem is, making that jump today feels like scaling the [Cliffs of Insanity](https://www.youtube.com/watch?v=ClzaP8HN2wc). Modern agent frameworks drop you into a world of account registration, configuration files, API key management, model selection matrices, and server lifecycle management. What started as "just tell the computer what to do" becomes a yak shave.
 
