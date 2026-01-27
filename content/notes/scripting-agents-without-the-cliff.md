@@ -1,6 +1,5 @@
 +++
 date = '2026-01-27T13:29:37-08:00'
-draft = true
 title = 'Scripting Agents Without the Cliff'
 featured_image = '/images/hero/cliffs-of-insanity.jpg'
 +++
