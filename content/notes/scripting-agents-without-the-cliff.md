@@ -84,7 +84,7 @@ The tools are real MCP tools that the agent can call, but you define them as sim
 
 ## A Real Example: Unminifying JavaScript
 
-To show a more realistic example of how agent scripting can be both easy and powerful, I built a JavaScript unminifier (in under 300 lines!). The pipeline:
+To show a more realistic example of how agent scripting can be both easy and powerful, I built [a JavaScript unminifier](https://github.com/dherman/thinkwell/blob/main/examples/src/unminify.ts) (in under 300 lines!). The pipeline:
 
 1. Pretty-print with Prettier (deterministic)
 2. Convert UMD wrapper to ESM (LLM)
