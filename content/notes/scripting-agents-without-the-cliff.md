@@ -10,15 +10,13 @@ I tried [coding in English](/notes/coding-in-english/). It was fun attempting to
 
 Here's the thing: conversational scripting is actually great for getting started. You chat with Claude Code or Codex, get it to do something useful, and if you want to reuse it, you drop it in a markdown file. So easy.
 
-But the moment you want real control—loops that don't require three paragraphs of prose, branching logic that isn't ambiguous, or composition that actually scales—**you still just want code.**
+But before long you start to need real control: even simple loops or unambiguous conditionals can be really painful with natural language. And then when you start wanting to scale up with some composable abstractions, it gets more awkward. **At some point you still want code.**
 
-The problem is, making that jump today feels like scaling the [Cliffs of Insanity](https://www.youtube.com/watch?v=ClzaP8HN2wc). Modern agent frameworks drop you into a world of account registration, configuration files, API key management, model selection matrices, and server lifecycle management. What started as "just tell the computer what to do" becomes a yak shave.
-
-I wanted something in between.
+Making that jump today feels like scaling the [Cliffs of Insanity](https://www.youtube.com/watch?v=ClzaP8HN2wc). Modern agent frameworks drop you into a world of account registration, configuration files, API key management, model selection matrices, and server lifecycle management. What started as "just tell the computer what to do" becomes a yak shave.
 
 ## Thinkwell
 
-I've been building a TypeScript library called [thinkwell](https://npmjs.com/package/thinkwell) that aims to preserve the simplicity of markdown scripting while giving you the power of a real programming language. The idea is simple: keep the parts that work (telling an LLM what to do in plain English) and replace the parts that don't (control flow, composition, deterministic logic) with TypeScript.
+Lately I've been exploring something in between: a TypeScript library called [thinkwell](https://npmjs.com/package/thinkwell) that aims to preserve the simplicity of markdown scripting while giving you the power of a real programming language. The idea is to keep the parts of agentic scripting that work (telling an LLM what to do in plain English) and replace the parts that don't (control flow, composition, deterministic logic) with TypeScript.
 
 Here's a hello world:
 
@@ -58,7 +56,7 @@ const greeting: Greeting = await agent
   .run();
 ```
 
-Notice what's missing: no config files, model selection, or temperature tuning. You connect to an existing CLI agent, describe what you want in English, define tools as inline TypeScript callbacks, and get back a typed result.
+Notice what's missing: many agent orchestration frameworks force you to contend with config files, model selection, or temperature tuning before you get off the ground. Instead, with thinkwell, you connect to an existing CLI agent, describe what you want in English, define tools as inline TypeScript callbacks, and get back a typed result.
 
 ## The Fluent API
 
@@ -144,6 +142,6 @@ Thinkwell sits in a sweet spot: more control than markdown, less ceremony than a
 
 Thinkwell is still early, but it's on [npm](https://npmjs.com/package/thinkwell) and [GitHub](https://github.com/dherman/thinkwell) if you want to experiment. I'd love feedback on the API design and what kinds of workflows people want to build.
 
-And if you're still using pure markdown scripts? That's fine too. Sometimes the simplest tool is the right one. But when you need more, it's nice to have a path that doesn't involve scaling a cliff.
+And if you're still using pure markdown scripts, that's fine too. Sometimes the simplest tool is the right one. But when you need more, it's nice to have a path that doesn't involve scaling a cliff.
 
 ###### image credits: [John Finkelstein](https://unsplash.com/photos/cliff-near-sea-ci9HzWTIVas)

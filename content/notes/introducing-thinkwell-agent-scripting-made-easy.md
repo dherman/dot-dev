@@ -14,13 +14,13 @@ The problem is that writing an agent today kind of sucks.
 
 ## The Framework Gap
 
-The agent frameworks that emerged in 2022 and 2023 were built for a different era. They're [too low level](https://blog.bryanl.dev/posts/agent-framework-vision/)—they drop you into a world of model selection, API key management, temperature tuning, provider-specific quirks, and server lifecycle boilerplate. It's like being handed a soldering iron when you just want to plug something in.
+The agent frameworks that emerged in 2022 and 2023 were built for a different era. They're [too low level](https://blog.bryanl.dev/posts/agent-framework-vision/): they immediately drop you into managing details like model selection, API key management, temperature tuning, provider-specific quirks, and server lifecycle boilerplate.
 
 On the other end of the spectrum, people try to script their entire agent workflow in markdown and feed it to a coding agent. I've [tried this myself](/notes/coding-in-english/) and it sort of works. But as soon as you need a loop, a conditional, or any kind of composition, you start finding yourself writing paragraphs of INCREASINGLY SHOUTY PROSE to express what would be one line of code.
 
 ## Thinkwell
 
-Over the last few weeks, I've been building a TypeScript library called [Thinkwell](https://thinkwell.sh) to fill this gap. It was born out of running into one engineer after another who wanted to build their own agents but kept bouncing off the tooling. They didn't want to learn an elaborate SDK. They didn't want to manage API keys. They just wanted to hack.
+Over the last few weeks, I've been building a TypeScript library called [Thinkwell](https://thinkwell.sh) to fill this gap. It was born out of running into one engineer after another who wanted to build their own agents but kept bouncing off the tooling. They didn't want to learn an elaborate SDK, they just wanted to hack.
 
 And the use cases weren't exotic, they were the kind of thing any software team runs into:
 
@@ -30,7 +30,7 @@ And the use cases weren't exotic, they were the kind of thing any software team 
 
 These are tasks where you want an LLM for the fuzzy reasoning parts but real code for the control flow, concurrency, and deterministic logic. Thinkwell lets you combine both.
 
-I've done a [bunch of tinkering](https://github.com/dherman/thinkwell/pulls?q=is%3Apr+is%3Aclosed) since I first posted about the [developer experience](/notes/scripting-agents-without-the-cliff/) I'm going for. Two weeks and 40k lines later, I'm really happy with [where it's landed](https://npmjs.com/package/thinkwell).
+I've done a [bunch of tinkering](https://github.com/dherman/thinkwell/pulls?q=is%3Apr+is%3Aclosed) since I first posted about the [developer experience](/notes/scripting-agents-without-the-cliff/) I'm going for. Two weeks and 40k lines later, I'm pretty happy with [where it's landed](https://npmjs.com/package/thinkwell).
 
 ### Just `open()`
 
@@ -98,7 +98,7 @@ Each session remembers its conversation history, so the second `.think()` can re
 
 ### Zero-Config CLI
 
-Not familiar with Node or TypeScript? No problem. Your coding agent can help you write the code, and you don't need to install anything other than the Thinkwell CLI:
+If you're not familiar with Node or TypeScript, you can let your coding agent help you write the code, and you don't need to install anything other than the Thinkwell CLI:
 
 ```bash
 brew install dherman/thinkwell/thinkwell
@@ -110,7 +110,7 @@ Then just run your script:
 thinkwell myscript.ts
 ```
 
-No `package.json`. No `tsconfig.json`. No `npm install`. You write a `.ts` file, you run it. The CLI handles TypeScript compilation, schema generation, and dependency resolution behind the scenes.
+This lets you get started without even learning the Node basics or dealing with any config files. You just write a `.ts` file and run it. The CLI handles TypeScript compilation, schema generation, and dependency resolution behind the scenes.
 
 ### One-Touch Setup
 

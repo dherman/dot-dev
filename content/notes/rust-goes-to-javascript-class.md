@@ -51,7 +51,7 @@ const dest = new Point(3, 4);
 console.log(source.distance(dest)); // 5
 ```
 
-That's it and it feels pretty clean to me! With one little annotation, you get implementations in two languages with well-defined interop.
+I'm happy with how clean this feels. With one annotation, you get implementations in two languages with well-defined interop.
 
 ## Under the Hood
 
