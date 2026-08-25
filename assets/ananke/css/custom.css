@@ -1,0 +1,19 @@
+/* Simple borders for Markdown tables */
+main table {
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.9em;
+}
+
+main table th,
+main table td {
+  border: 1px solid #ccc;
+  padding: 0.4em 0.75em;
+  text-align: left;
+  vertical-align: top;
+}
+
+main table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
