@@ -14,7 +14,7 @@ Independence enables organizations to parallelize, which is key to scaling most 
 
 The repository comes into play because it presents an atomic view of the state of a codebase. Monorepo solutions take advantage of this atomicity to optimize coordination; multi-repo solutions instead inherently optimize for independence. Whichever approach is taken, that choice leaves a gap that has to be filled with additional tooling and engineering practices.
 
-There are real, practical implications in the trade-offs between the two. But what I find most unsatisfying about most debates is what almost always gets left out: **what scale are we talking about?** Trying to draw conclusions about how to organize a weekend hobby app based on how Google or Meta runs their entire software engineering organizations is essentially a category error.
+There are real, practical implications in the trade-offs between the two. But what I find most unsatisfying about most debates is what almost always gets left out: **what scale are we talking about?** Trying to draw conclusions about how to organize a weekend hobby app based on how a bigco runs its entire software engineering organization is essentially a category error.
 
 ## A Simple Framework: Team Size
 
