@@ -1,6 +1,5 @@
 +++
 date = '2026-08-24T14:34:05-07:00'
-draft = true
 title = 'The Monorepo Spectrum'
 featured_image = '/images/hero/spectrum.jpg'
 +++
