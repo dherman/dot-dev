@@ -8,4 +8,6 @@
 # Deploy previews build drafts so unpublished posts can be reviewed.
 # Production (`command` above) still excludes them.
 [context.deploy-preview]
-  command = "hugo -D --buildFuture"
+  # -b overrides baseURL: Ananke builds absolute asset URLs, so without this
+  # a preview requests images from production and new ones 404.
+  command = "hugo -D --buildFuture -b $DEPLOY_PRIME_URL"
