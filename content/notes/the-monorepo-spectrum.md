@@ -13,7 +13,7 @@ How to structure and organize code is a surprisingly subtle topic, with big impl
 The main tension is between two important engineering constraints: **independence** and **coordination.**
 Independence enables organizations to parallelize, which is key to scaling most work. But coordination use cases, while typically less common, are no less important, and cover a range of needs: atomic releases, cross-cutting product changes, coding standards, API refactorings.
 
-The repository come into play because it presents an atomic view of the state of a codebase. Monorepo solutions take advantage of this atomicity to optimize coordination; multi-repo solutions instead inherently optimize for independence. Whichever approach is taken, that choice leaves a gap that has to be filled with additional tooling and engineering practices.
+The repository comes into play because it presents an atomic view of the state of a codebase. Monorepo solutions take advantage of this atomicity to optimize coordination; multi-repo solutions instead inherently optimize for independence. Whichever approach is taken, that choice leaves a gap that has to be filled with additional tooling and engineering practices.
 
 There are real, practical implications in the trade-offs between the two. But what I find most unsatisfying about most debates is what almost always gets left out: **what scale are we talking about?** Trying to draw conclusions about how to organize a weekend hobby app based on how Google or Meta runs their entire software engineering organizations is essentially a category error.
 
