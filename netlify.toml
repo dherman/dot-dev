@@ -4,3 +4,8 @@
 
 [build.environment]
   HUGO_VERSION = "0.152.2"
+
+# Deploy previews build drafts so unpublished posts can be reviewed.
+# Production (`command` above) still excludes them.
+[context.deploy-preview]
+  command = "hugo -D --buildFuture"

@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'David Herman'
 sectionPagesMenu = 'main'
 
+[params]
+custom_css = ['custom.css']
+
 [module]
 [[module.imports]]
 disable = false
