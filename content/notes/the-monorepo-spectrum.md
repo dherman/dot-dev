@@ -35,7 +35,7 @@ This is only the first of many questions. But it's useful for:
 
 **Focusing debate.** Scale is a useful tool for helping ensure that people are having the same conversation.
 
-That's my "monorepo spectrum" model. I find it's simple enough for anyone to remember but explanatory enough to bring structure to a complex and overwhelming topic that's all-too-prone to hand-waving and dogma.
+That's my "monorepo spectrum" model: easy enough to remember but explanatory enough to bring structure to a complex and overwhelming topic that's all-too-prone to hand-waving and dogma.
 
 [^1]: For example, I have found that the need for merge queues (aka merge trains) arises much sooner now that engineers and agents are generating a higher volume of PRs.
 
