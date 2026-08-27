@@ -5,7 +5,7 @@ featured_image = '/images/hero/crayons.jpg'
 +++
 
 If monorepos are [different beasts at different scales]({{% relref "the-monorepo-spectrum.md" %}}),
-do they have anything in common? Or does having a single term for such divergent technologies
+do they have anything in common? Or does having a single term for such varied technologies
 do more harm than good?
 
 <!--more-->

@@ -4,7 +4,8 @@ title = 'The Monorepo Spectrum'
 featured_image = '/images/hero/spectrum.jpg'
 +++
 
-I'm not going to try to convince anyone today of whether monorepos are a good or bad idea. Instead, I want to focus on the underappreciated and fundamental fact that **a monorepo is not a monorepo is not a monorepo.**
+I'm not going to try to convince anyone today of whether monorepos are a good or bad idea. Instead, I want to focus on the underappreciated
+fact that **a monorepo is not a monorepo is not a monorepo.**
 
 <!--more-->
 
