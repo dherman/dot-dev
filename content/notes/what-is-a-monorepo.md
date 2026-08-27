@@ -14,7 +14,7 @@ To be sure, some engineers[^1] complain about the squishiness of the word. One r
 At what scope? Isn't every repo a monorepo? What value does this word even provide when we could just say "repo?"
 
 But the [descriptivist](https://en.wikipedia.org/wiki/Linguistic_description#Descriptive_versus_prescriptive_linguistics)
-angel on my shoulder reminded me that terminology persists in culture for a reason.[^2] So it's worth
+angel on my shoulder reminds me that terminology persists in culture for a reason.[^2] So it's worth
 unpacking why. The power of this abstraction is that it conveys something about the _intent_ of organizing a codebase
 into a single repository. Let's attempt a working definition:
 
@@ -75,7 +75,7 @@ Monorepos are not a magic wand. As with polyrepos, they come with their own chal
 * Validation: Even though _merges_ are atomic, a monorepo may or may not guarantee that _validation_ of merges is performed atomically. Without solutions like merge queues or merge trains, which provide stronger guarantees about the atomicity of built+test+merge, race conditions can cause concurrently validated merges to break the tree.
 * Independent release: Monorepos optimize for dealing with all components at the latest version. Supporting complex release orchestration semantics requires additional machinery, and some use cases like deploying emergency patches to older versions can be an awkward fit.
 
-## Takeaway
+## Takeaway: Keep Learning!
 
 This is not a complete list, but it's a place to start. My intent isn't to overwhelm but, short of a grand unified theory,
 I feel at least I can ground a controversial topic with some structure.
